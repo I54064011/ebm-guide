@@ -1,65 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>EBM 流程導覽</title>
+  <title>EBM Guide</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { font-family: "Segoe UI", sans-serif; margin: 0; padding: 0; }
-    nav { background-color: #007BFF; padding: 10px; }
-    nav a, .dropbtn { color: white; text-decoration: none; padding: 10px; font-weight: bold; }
-    nav a:hover, .dropdown:hover .dropbtn { background-color: #0056b3; }
-    .dropdown { display: inline-block; position: relative; }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: white;
-      min-width: 160px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-      z-index: 1;
+    /* 建議放到 style.css，這裡方便展示 */
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin: 40px 0;
     }
-    .dropdown-content a {
-      color: #007BFF;
-      padding: 10px 16px;
-      text-decoration: none;
-      display: block;
+    .big-btn {
+      padding: 32px 48px;
+      font-size: 2rem;
+      border: none;
+      border-radius: 12px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     }
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
+    .big-btn:hover {
+      background-color: #388E3C;
     }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    header { padding: 40px; text-align: center; background-color: #f0f8ff; }
-    section { padding: 20px; max-width: 800px; margin: auto; }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="#intro">什麼是 EBM</a>
-    <div class="dropdown">
-      <button class="dropbtn">EBM 流程 ▼</button>
-      <div class="dropdown-content">
-        <a href="ask.html">Ask</a>
-        <a href="acquire.html">Acquire</a>
-        <a href="appraise.html">Appraise</a>
-        <a href="apply.html">Apply</a>
-        <a href="assess.html">Assess</a>
-      </div>
-    </div>
-    <a href="#resources">延伸資源</a>
-  </nav>
   <header>
-    <h1>歡迎來到實證醫學（EBM）導覽網站</h1>
-    <p>學習 EBM 的 5A 流程：Ask, Acquire, Appraise, Apply, Assess</p>
+    <h1>EBM Guide</h1>
   </header>
-  <section id="intro">
-    <h2>什麼是 EBM？</h2>
-    <p>實證醫學（Evidence-Based Medicine, EBM）是一種整合臨床專業、最佳研究證據與病人價值的醫療決策方式。</p>
-  </section>
-  <section id="resources">
-    <h2>延伸資源</h2>
-    <p>敬請期待更多學習資源！</p>
-  </section>
+  <main>
+    <p>歡迎來到實證醫學（EBM）網站！請選擇一個階段：</p>
+    <div class="button-group">
+      <a href="ask.html"><button class="big-btn">Ask</button></a>
+      <a href="acquire.html"><button class="big-btn">Acquire</button></a>
+      <a href="appraise.html"><button class="big-btn">Appraise</button></a>
+      <a href="apply.html"><button class="big-btn">Apply</button></a>
+      <a href="assess.html"><button class="big-btn">Assess</button></a>
+    </div>
+  </main>
 </body>
 </html>
